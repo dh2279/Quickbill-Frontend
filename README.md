@@ -1,2 +1,3 @@
 # Quickbill-Frontend
-QuickBill Frontend is a responsive React application built with Tailwind CSS that enables to generate bills, manage product quantities, and download PDF invoices.
+This is the frontend module of the QuickBill Cafe Billing System, developed using React and Tailwind CSS.
+The application communicates with a Spring Boot backend through REST APIs to fetch products, generate bills, and download PDF invoices.
