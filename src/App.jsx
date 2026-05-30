@@ -17,9 +17,7 @@ function App() {
     if (found) {
       setItems(
         items.map((i) =>
-          i.productId === p.id
-            ? { ...i, quantity: i.quantity + 1 }
-            : i
+          i.productId === p.id ? { ...i, quantity: i.quantity + 1 } : i
         )
       );
     } else {
@@ -47,18 +45,13 @@ function App() {
     setItems(
       items
         .map((i) =>
-          i.productId === id
-            ? { ...i, quantity: i.quantity - 1 }
-            : i
+          i.productId === id ? { ...i, quantity: i.quantity - 1 } : i
         )
         .filter((i) => i.quantity > 0)
     );
   };
 
-  const total = items.reduce(
-    (sum, i) => sum + i.price * i.quantity,
-    0
-  );
+  const total = items.reduce((sum, i) => sum + i.price * i.quantity, 0);
 
   const generateBill = async () => {
     const bill = {
@@ -80,7 +73,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
+    <div className="min-h-screen w-full bg-gradient-to-br from-slate-950 via-gray-900 to-slate-800 text-white p-6">
       <h1 className="text-2xl font-bold text-center mb-6">
         Cafe Billing System
       </h1>
