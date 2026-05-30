@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE = "http://localhost:8080";
+const BASE = "https://quickbill-backend-lqnm.onrender.com";
 
 export const getProducts = () => axios.get(`${BASE}/products/all`);
 export const createBill = (bill) => axios.post(`${BASE}/bill/create`, bill);
